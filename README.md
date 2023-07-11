@@ -1,6 +1,8 @@
 # System Specs Analyzer
 A program to see the basic info of your computer (cpu, ram, gpu, etc)
 
+-------
+
 Installation:
 ```
 pip install -r requirements.txt
