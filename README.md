@@ -1,4 +1,4 @@
-# system-specs-analyzer
+# System Specs Analyzer
 A program to see the basic info of your computer (cpu, ram, gpu, etc)
 
 Installation:
