@@ -122,6 +122,17 @@ class LoadingWindow(Frame):
         self.label.pack()
         self.pack(fill=BOTH, expand=1)
 
+
+class SystemInfoWindow(Frame):
+    def __init__(self, parent, controller):
+        Frame.__init__(self, parent)
+
+    def set_text(self, text):
+        text = Label(self, text=text)
+        text.place(x=20, y=20)
+        text.pack()
+
+
 class Frames(Tk):
     def __init__(self, *args, **kwargs):
         Tk.__init__(self, *args, **kwargs)
@@ -143,15 +154,6 @@ class Frames(Tk):
     def show_frame(self, cont):
         self._frame = self.frames[cont]
         return self._frame.tkraise()
-
-class SystemInfoWindow(Frame):
-    def __init__(self, parent, controller):
-        Frame.__init__(self, parent)
-
-    def set_text(self, text):
-        text = Label(self, text=text)
-        text.place(x=20, y=20)
-        text.pack()
 
 
 def center_frame(root: Frames):
